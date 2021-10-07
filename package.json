@@ -1,5 +1,5 @@
 {
-  "name": "userscript-vitesse",
+  "name": "steam-activity-alt-userscript",
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",

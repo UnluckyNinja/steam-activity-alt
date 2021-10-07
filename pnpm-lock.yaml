@@ -70,6 +70,8 @@ packages:
       eslint-plugin-yml: registry.nlark.com/eslint-plugin-yml/0.9.0_eslint@7.32.0
       jsonc-eslint-parser: registry.nlark.com/jsonc-eslint-parser/1.3.1
       yaml-eslint-parser: registry.nlark.com/yaml-eslint-parser/0.3.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@antfu/eslint-config-react/0.7.0_eslint@7.32.0+typescript@4.4.3:
@@ -84,6 +86,7 @@ packages:
       eslint: registry.nlark.com/eslint/7.32.0
       eslint-plugin-react: registry.nlark.com/eslint-plugin-react/7.26.0_eslint@7.32.0
     transitivePeerDependencies:
+      - supports-color
       - typescript
     dev: true
 
@@ -101,6 +104,8 @@ packages:
       '@typescript-eslint/parser': registry.nlark.com/@typescript-eslint/parser/4.31.2_eslint@7.32.0+typescript@4.4.3
       eslint: registry.nlark.com/eslint/7.32.0
       typescript: registry.nlark.com/typescript/4.4.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@antfu/eslint-config-vue/0.7.0_eslint@7.32.0+typescript@4.4.3:
@@ -115,6 +120,7 @@ packages:
       eslint: registry.nlark.com/eslint/7.32.0
       eslint-plugin-vue: registry.nlark.com/eslint-plugin-vue/7.12.1_eslint@7.32.0
     transitivePeerDependencies:
+      - supports-color
       - typescript
     dev: true
 
@@ -130,6 +136,7 @@ packages:
       '@antfu/eslint-config-vue': registry.nlark.com/@antfu/eslint-config-vue/0.7.0_eslint@7.32.0+typescript@4.4.3
       eslint: registry.nlark.com/eslint/7.32.0
     transitivePeerDependencies:
+      - supports-color
       - typescript
     dev: true
 
@@ -194,6 +201,8 @@ packages:
       json5: registry.nlark.com/json5/2.2.0
       semver: registry.nlark.com/semver/6.3.0
       source-map: registry.nlark.com/source-map/0.5.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/eslint-parser/7.15.7_@babel+core@7.15.5+eslint@7.32.0:
@@ -301,6 +310,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4:
@@ -322,6 +333,8 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-simple-access/7.15.4:
@@ -364,6 +377,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/highlight/7.14.5:
@@ -410,6 +425,8 @@ packages:
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
       debug: registry.nlark.com/debug/4.3.2
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/types/7.15.6:
@@ -436,6 +453,8 @@ packages:
       js-yaml: registry.nlark.com/js-yaml/3.14.1
       minimatch: registry.nlark.com/minimatch/3.0.4
       strip-json-comments: registry.nlark.com/strip-json-comments/3.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@humanwhocodes/config-array/0.5.0:
@@ -447,6 +466,8 @@ packages:
       '@humanwhocodes/object-schema': registry.nlark.com/@humanwhocodes/object-schema/1.2.0
       debug: registry.nlark.com/debug/4.3.2
       minimatch: registry.nlark.com/minimatch/3.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@humanwhocodes/object-schema/1.2.0:
@@ -555,6 +576,10 @@ packages:
     peerDependencies:
       '@typescript-eslint/parser': ^4.0.0
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@typescript-eslint/experimental-utils': registry.nlark.com/@typescript-eslint/experimental-utils/4.31.2_eslint@7.32.0+typescript@4.4.3
       '@typescript-eslint/parser': registry.nlark.com/@typescript-eslint/parser/4.31.2_eslint@7.32.0+typescript@4.4.3
@@ -565,8 +590,9 @@ packages:
       regexpp: registry.nlark.com/regexpp/3.2.0
       semver: registry.nlark.com/semver/7.3.5
       tsutils: registry.nlark.com/tsutils/3.21.0_typescript@4.4.3
+      typescript: registry.nlark.com/typescript/4.4.3
     transitivePeerDependencies:
-      - typescript
+      - supports-color
     dev: true
 
   registry.nlark.com/@typescript-eslint/eslint-plugin/4.31.2_eslint@7.32.0+typescript@4.4.3:
@@ -578,6 +604,10 @@ packages:
     peerDependencies:
       '@typescript-eslint/parser': ^4.0.0
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@typescript-eslint/experimental-utils': registry.nlark.com/@typescript-eslint/experimental-utils/4.31.2_eslint@7.32.0+typescript@4.4.3
       '@typescript-eslint/scope-manager': registry.nlark.com/@typescript-eslint/scope-manager/4.31.2
@@ -587,8 +617,9 @@ packages:
       regexpp: registry.nlark.com/regexpp/3.2.0
       semver: registry.nlark.com/semver/7.3.5
       tsutils: registry.nlark.com/tsutils/3.21.0_typescript@4.4.3
+      typescript: registry.nlark.com/typescript/4.4.3
     transitivePeerDependencies:
-      - typescript
+      - supports-color
     dev: true
 
   registry.nlark.com/@typescript-eslint/experimental-utils/4.31.2_eslint@7.32.0+typescript@4.4.3:
@@ -608,6 +639,7 @@ packages:
       eslint-scope: registry.nlark.com/eslint-scope/5.1.1
       eslint-utils: registry.nlark.com/eslint-utils/3.0.0_eslint@7.32.0
     transitivePeerDependencies:
+      - supports-color
       - typescript
     dev: true
 
@@ -619,14 +651,19 @@ packages:
     engines: {node: ^10.12.0 || >=12.0.0}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@typescript-eslint/scope-manager': registry.nlark.com/@typescript-eslint/scope-manager/4.31.2
       '@typescript-eslint/types': registry.nlark.com/@typescript-eslint/types/4.31.2
       '@typescript-eslint/typescript-estree': registry.nlark.com/@typescript-eslint/typescript-estree/4.31.2_typescript@4.4.3
       debug: registry.nlark.com/debug/4.3.2
       eslint: registry.nlark.com/eslint/7.32.0
+      typescript: registry.nlark.com/typescript/4.4.3
     transitivePeerDependencies:
-      - typescript
+      - supports-color
     dev: true
 
   registry.nlark.com/@typescript-eslint/scope-manager/4.31.2:
@@ -652,6 +689,11 @@ packages:
     name: '@typescript-eslint/typescript-estree'
     version: 4.31.2
     engines: {node: ^10.12.0 || >=12.0.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@typescript-eslint/types': registry.nlark.com/@typescript-eslint/types/4.31.2
       '@typescript-eslint/visitor-keys': registry.nlark.com/@typescript-eslint/visitor-keys/4.31.2
@@ -660,8 +702,9 @@ packages:
       is-glob: registry.nlark.com/is-glob/4.0.1
       semver: registry.nlark.com/semver/7.3.5
       tsutils: registry.nlark.com/tsutils/3.21.0_typescript@4.4.3
+      typescript: registry.nlark.com/typescript/4.4.3
     transitivePeerDependencies:
-      - typescript
+      - supports-color
     dev: true
 
   registry.nlark.com/@typescript-eslint/visitor-keys/4.31.2:
@@ -799,6 +842,11 @@ packages:
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
     dependencies:
       '@vueuse/shared': registry.nlark.com/@vueuse/shared/6.4.1_vue@3.2.12
       vue: registry.nlark.com/vue/3.2.12
@@ -813,6 +861,11 @@ packages:
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
     dependencies:
       vue: registry.nlark.com/vue/3.2.12
       vue-demi: registry.nlark.com/vue-demi/0.11.4_vue@3.2.12
@@ -829,6 +882,7 @@ packages:
       tsup: registry.nlark.com/tsup/4.14.0_typescript@4.4.3
       windicss: registry.nlark.com/windicss/3.1.7
     transitivePeerDependencies:
+      - supports-color
       - ts-node
       - typescript
     dev: true
@@ -847,6 +901,7 @@ packages:
       micromatch: registry.nlark.com/micromatch/4.0.4
       windicss: registry.nlark.com/windicss/3.1.7
     transitivePeerDependencies:
+      - supports-color
       - ts-node
       - typescript
     dev: true
@@ -1272,6 +1327,11 @@ packages:
     name: debug
     version: 4.3.2
     engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: registry.nlark.com/ms/2.1.2
     dev: true
@@ -1697,6 +1757,8 @@ packages:
       reserved-words: registry.nlark.com/reserved-words/0.1.2
       safe-regex: registry.nlark.com/safe-regex/2.1.1
       semver: registry.nlark.com/semver/7.3.5
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/eslint-plugin-vue/7.12.1_eslint@7.32.0:
@@ -1713,6 +1775,8 @@ packages:
       natural-compare: registry.nlark.com/natural-compare/1.4.0
       semver: registry.nlark.com/semver/7.3.5
       vue-eslint-parser: registry.nlark.com/vue-eslint-parser/7.11.0_eslint@7.32.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/eslint-plugin-yml/0.9.0_eslint@7.32.0:
@@ -1728,6 +1792,8 @@ packages:
       lodash: registry.nlark.com/lodash/4.17.21
       natural-compare: registry.nlark.com/natural-compare/1.4.0
       yaml-eslint-parser: registry.nlark.com/yaml-eslint-parser/0.3.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/eslint-scope/5.1.1:
@@ -1754,6 +1820,8 @@ packages:
       eslint-visitor-keys: registry.nlark.com/eslint-visitor-keys/2.1.0
       esquery: registry.nlark.com/esquery/1.4.0
       multimap: registry.nlark.com/multimap/1.1.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/eslint-utils/2.1.0:
@@ -1839,6 +1907,8 @@ packages:
       table: registry.nlark.com/table/6.7.1
       text-table: registry.nlark.com/text-table/0.2.0
       v8-compile-cache: registry.nlark.com/v8-compile-cache/2.3.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/espree/6.2.1:
@@ -3245,6 +3315,9 @@ packages:
     engines: {node: '>= 10'}
     peerDependencies:
       ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      ts-node:
+        optional: true
     dependencies:
       import-cwd: registry.nlark.com/import-cwd/3.0.0
       lilconfig: registry.nlark.com/lilconfig/2.0.3
@@ -3920,6 +3993,9 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: ^4.2.3
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       cac: registry.nlark.com/cac/6.7.3
       chalk: registry.nlark.com/chalk/4.1.2
@@ -3936,6 +4012,7 @@ packages:
       tree-kill: registry.nlark.com/tree-kill/1.2.2
       typescript: registry.nlark.com/typescript/4.4.3
     transitivePeerDependencies:
+      - supports-color
       - ts-node
     dev: true
 
@@ -4014,6 +4091,9 @@ packages:
     version: 0.2.7
     peerDependencies:
       '@vueuse/core': ^6.0.0
+    peerDependenciesMeta:
+      '@vueuse/core':
+        optional: true
     dependencies:
       '@antfu/utils': registry.nlark.com/@antfu/utils/0.3.0
       '@rollup/pluginutils': registry.nlark.com/@rollup/pluginutils/4.1.1
@@ -4038,6 +4118,15 @@ packages:
       '@vue/compiler-sfc': ^3.0.2
       vue-template-compiler: ^2.6.12
       vue-template-es2015-compiler: ^1.9.0
+    peerDependenciesMeta:
+      '@svgr/core':
+        optional: true
+      '@vue/compiler-sfc':
+        optional: true
+      vue-template-compiler:
+        optional: true
+      vue-template-es2015-compiler:
+        optional: true
     dependencies:
       '@iconify/json': registry.nlark.com/@iconify/json/1.1.404
       '@iconify/json-tools': registry.nlark.com/@iconify/json-tools/1.0.10
@@ -4070,6 +4159,7 @@ packages:
       vue: registry.nlark.com/vue/3.2.12
     transitivePeerDependencies:
       - rollup
+      - supports-color
       - vite
       - webpack
     dev: true
@@ -4083,6 +4173,13 @@ packages:
       rollup: ^2.50.0
       vite: ^2.3.0
       webpack: 4 || 5
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
     dependencies:
       upath: registry.nlark.com/upath/2.0.1
       vite: registry.nlark.com/vite/2.5.10
@@ -4137,6 +4234,8 @@ packages:
       sirv: registry.nlark.com/sirv/1.0.17
       ufo: registry.nlark.com/ufo/0.7.9
       vite: registry.nlark.com/vite/2.5.10
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/vite-plugin-pages/0.17.5_ece4885f8f1ae7d2e7306f4ece6a44cf:
@@ -4147,6 +4246,9 @@ packages:
     peerDependencies:
       '@vue/compiler-sfc': '>=3'
       vite: '>=2'
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
     dependencies:
       '@antfu/utils': registry.nlark.com/@antfu/utils/0.2.4
       '@vue/compiler-sfc': registry.nlark.com/@vue/compiler-sfc/3.2.12
@@ -4171,6 +4273,7 @@ packages:
       vite: registry.nlark.com/vite/2.5.10
       windicss: registry.nlark.com/windicss/3.1.7
     transitivePeerDependencies:
+      - supports-color
       - ts-node
       - typescript
     dev: true
@@ -4201,6 +4304,9 @@ packages:
     peerDependencies:
       '@vue/composition-api': ^1.0.0-rc.1
       vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
     dependencies:
       vue: registry.nlark.com/vue/3.2.12
     dev: false
@@ -4222,6 +4328,8 @@ packages:
       esquery: registry.nlark.com/esquery/1.4.0
       lodash: registry.nlark.com/lodash/4.17.21
       semver: registry.nlark.com/semver/6.3.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/vue-router/4.0.11_vue@3.2.12:
