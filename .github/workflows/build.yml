@@ -39,11 +39,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - run: pnpm build --if-present
-    - run: |
+    - name: Git operation
+      run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git checkout --orphan dist-main
         git rm --cached . -rf
-        git add ./dist/script.user.js
+        git add -f ./dist/script.user.js
         git commit -m "CI build"
         git push
