@@ -34,8 +34,9 @@ jobs:
     - run: pnpm build --if-present
     - name: separate file
       run: |
-        ls .
-        mv dist/script.user.js dist-main/script.user.js
+        ls dist
+        mkdir dist-main
+        mv ./dist/script.user.js ./dist-main/script.user.js
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
