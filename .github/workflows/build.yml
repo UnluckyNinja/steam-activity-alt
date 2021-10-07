@@ -40,4 +40,4 @@ jobs:
         git rm --cached . -rf
         git add -f ./dist/script.user.js
         git commit -m "CI build"
-        git push -u origin dist/main
+        git push -u origin dist/main:dist/main
